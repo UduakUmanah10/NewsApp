@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.screens.firstScreen">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_texture_left"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineLeftTexture"
+        app:layout_constraintDimensionRatio="1:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeftTexture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.33105335" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/next"
+        style="@style/blueButtonStyle"
+        android:layout_width="130dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="52dp"
+        android:text="Next"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEllipseright"
+        app:layout_constraintHorizontal_bias="0.985"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEllipseLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineEllipsebottom"
+        app:layout_constraintVertical_bias="0.458" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="330dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="372dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipseTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.19"
+        app:layout_constraintGuide_begin="20dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEllipsebottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="150dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="286dp"
+        android:layout_height="98dp"
+        android:fontFamily="@font/poppins_thin"
+        android:text="Get Updated With the Latest BreKing News"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineLeftTexture"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEllipseright"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEllipseLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineEllipseTop"
+        app:layout_constraintVertical_bias="0.354" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="295dp"
+        android:layout_height="336dp"
+        android:src="@drawable/news_papper"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineEllipsebottom"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineEllipseright"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEllipseLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineLeftTexture" />
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

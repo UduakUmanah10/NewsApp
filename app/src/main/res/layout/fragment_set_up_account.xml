@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.setUpAccount">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blury_background"
+        tools:ignore="ContentDescription" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <TextView
+
+            android:id="@+id/letsCreateAccount"
+            android:layout_width="329dp"
+            android:layout_height="101dp"
+            android:layout_marginStart="4dp"
+            android:fontFamily="@font/poppins_thin"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Create An Account Here"
+            android:textColor="@color/g_black"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteY="38dp" />
+
+        <EditText
+            android:id="@+id/createFirstName"
+            style="@style/editText"
+            android:layout_width="335dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="72dp"
+            android:hint="First Name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@id/setUpAccountRight"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/letsCreateAccount"
+            app:layout_goneMarginTop="@dimen/_20sdp" />
+
+        <EditText
+            android:id="@+id/createLastName"
+            style="@style/editText"
+            android:layout_width="335dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="28dp"
+            android:hint="Last Name"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@id/setUpAccountRight"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/createFirstName" />
+
+        <EditText
+            android:id="@+id/Email"
+            style="@style/editText"
+            android:layout_width="335dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="28dp"
+            android:hint="Email "
+            app:layout_constraintTop_toBottomOf="@+id/createLastName"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+            app:layout_constraintEnd_toEndOf="@id/setUpAccountRight"
+            />
+        <EditText
+            android:id="@+id/password"
+            style="@style/editText"
+            android:layout_width="335dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="28dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintTop_toBottomOf="@+id/Email"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+            app:layout_constraintEnd_toEndOf="@id/setUpAccountRight"
+            />
+
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/Login"
+            style="@style/blueButtonStyle"
+            android:layout_width="336dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="28dp"
+            android:text="Create Account"
+            app:layout_constraintEnd_toEndOf="@+id/setUpAccountRight"
+            app:layout_constraintStart_toStartOf="@+id/guideLineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/password"
+            app:spinning_bar_color="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/facebookLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/facebook_login"
+            app:layout_constraintStart_toStartOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+        <ImageView
+            android:id="@+id/googleLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/google_login"
+            app:layout_constraintEnd_toEndOf="@+id/password"
+            app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FaceBook"
+            app:layout_constraintBottom_toBottomOf="@+id/facebookLogin"
+            app:layout_constraintEnd_toEndOf="@+id/facebookLogin"
+            app:layout_constraintHorizontal_bias="0.67"
+            app:layout_constraintStart_toStartOf="@+id/facebookLogin"
+            app:layout_constraintTop_toTopOf="@+id/facebookLogin"
+            app:layout_constraintVertical_bias="0.428" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            app:layout_constraintBottom_toBottomOf="@+id/googleLogin"
+            app:layout_constraintEnd_toEndOf="@+id/googleLogin"
+            app:layout_constraintHorizontal_bias="0.634"
+            app:layout_constraintStart_toStartOf="@+id/googleLogin"
+            app:layout_constraintTop_toTopOf="@+id/googleLogin"
+            app:layout_constraintVertical_bias="0.476" />
+
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineLoginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/setUpAccountRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.91" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

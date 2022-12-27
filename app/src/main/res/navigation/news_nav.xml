@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/news_nav"
+    app:startDestination="@id/newsHomeFragment">
+    <fragment
+        android:id="@+id/newsHomeFragment"
+        android:name="ps.room.shoppingapp.newsfragment.NewsHomeFragment"
+        tools:layout="@layout/fragment_newshome"
+        android:label="NewsHomeFragment" >
+        <action
+            android:id="@+id/action_newsHomeFragment_to_viewArticle"
+            app:destination="@id/viewArticle" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewArticle"
+        android:name="ps.room.shoppingapp.newsfragment.ViewArticle"
+        tools:layout="@layout/fragment_view_article"
+        android:label="ViewArticle" >
+        <argument
+            android:name="article"
+            app:argType="ps.room.shoppingapp.dataclass.Article" />
+    </fragment>
+    <fragment
+        android:id="@+id/newsSearchFragment"
+        android:name="ps.room.shoppingapp.newsfragment.NewsSearchFragment"
+        tools:layout="@layout/fragment_news_search"
+        android:label="NewsSearchFragment" >
+        <action
+            android:id="@+id/action_newsSearchFragment_to_viewArticle"
+            app:destination="@id/viewArticle" />
+    </fragment>
+    <fragment
+        android:id="@+id/shoppingProfileFragment2"
+        android:name="ps.room.shoppingapp.newsfragment.ShoppingProfileFragment"
+        tools:layout="@layout/fragment_shoppingprofile"
+        android:label="ShoppingProfileFragment" />
+    <fragment
+        android:id="@+id/newsCartFragment"
+        android:name="ps.room.shoppingapp.newsfragment.NewsCartFragment"
+        tools:layout="@layout/fragment_shoppingcart"
+        android:label="NewsCartFragment" >
+        <action
+            android:id="@+id/action_newsCartFragment_to_viewArticle"
+            app:destination="@id/viewArticle" />
+    </fragment>
+    <fragment
+        android:id="@+id/first"
+        android:name="ps.room.shoppingapp.fragment.testpager.first"
+        android:label="fragment_first"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_first_to_viewArticle"
+            app:destination="@id/viewArticle" />
+    </fragment>
+</navigation>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.LoginFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/blury_background"
+        android:scaleType="centerCrop"
+        tools:ignore="ContentDescription" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="end"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blury_background"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="-30dp" />
+
+        <TextView
+            android:id="@+id/tv_app_name"
+            style="@style/h2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:drawableStart="@drawable/ic_kleine_shape"
+            android:drawablePadding="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_light"
+            android:text="@string/g_app_name"
+            android:textColor="@color/g_black"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/guideLineLoginLeft"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/letsLogin"
+            android:layout_width="329dp"
+            android:layout_height="110dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_thin"
+            android:gravity="center"
+            android:text="Log In And Start Shopping"
+            android:textColor="@color/g_black"
+            android:textSize="@dimen/_25sdp"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/tv_app_name" />
+
+        <TextView
+            style="@style/h2"
+            android:id="@+id/register"
+            android:layout_width="319dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:text="Dont Have an Account ? Click To Begin Refistration"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineLoginRight"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@id/letsLogin" />
+
+
+        <EditText
+            android:id="@+id/email"
+            style="@style/editText"
+            android:layout_width="334dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="24dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="@id/guideLineLoginRight"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/register" />
+
+        <EditText
+            android:id="@+id/loginpassword"
+            style="@style/editText"
+            android:layout_width="335dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="28dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="@id/guideLineLoginRight"
+            app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
+
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="172dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="start"
+            android:text="Forgot Password?"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@+id/loginpassword"
+            app:layout_constraintTop_toBottomOf="@id/loginpassword" />
+
+        <br.com.simplepass.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/Login"
+            style="@style/blueButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="28dp"
+            android:text="Login"
+            app:spinning_bar_color="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineLoginRight"
+            app:layout_constraintStart_toStartOf="@+id/guideLineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
+
+        <ImageView
+            android:id="@+id/facebookLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:src="@drawable/facebook_login"
+            app:layout_constraintStart_toStartOf="@+id/guideLineLoginLeft"
+            app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+
+        <ImageView
+            android:id="@+id/googleLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/google_login"
+            app:layout_constraintEnd_toEndOf="@+id/guideLineLoginRight"
+            app:layout_constraintTop_toBottomOf="@+id/Login" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FaceBook"
+            app:layout_constraintBottom_toBottomOf="@+id/facebookLogin"
+            app:layout_constraintEnd_toEndOf="@+id/facebookLogin"
+            app:layout_constraintHorizontal_bias="0.634"
+            app:layout_constraintStart_toStartOf="@+id/facebookLogin"
+            app:layout_constraintTop_toTopOf="@+id/facebookLogin"
+            app:layout_constraintVertical_bias="0.476" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Google"
+            app:layout_constraintBottom_toBottomOf="@+id/googleLogin"
+            app:layout_constraintEnd_toEndOf="@+id/googleLogin"
+            app:layout_constraintHorizontal_bias="0.634"
+            app:layout_constraintStart_toStartOf="@+id/googleLogin"
+            app:layout_constraintTop_toTopOf="@+id/googleLogin"
+            app:layout_constraintVertical_bias="0.476" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineLoginLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.09" />
+
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineLoginRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.91" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+</FrameLayout>
+

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="ps.room.shoppingapp.onboarding.screens.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_viewPagerfragment"
+            app:destination="@id/viewPagerfragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment2"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerfragment"
+        android:name="ps.room.shoppingapp.ViewPagerfragment"
+        android:label="fragment_view_pagerfragment"
+        tools:layout="@layout/fragment_view_pagerfragment" >
+        <action
+            android:id="@+id/action_viewPagerfragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/viewPagerfragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="ps.room.shoppingapp.fragment.homeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_registerFragment"
+            app:destination="@id/registerFragment"
+            app:enterAnim="@anim/from_bottom" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ps.room.shoppingapp.fragment.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_setUpAccount"
+            app:destination="@id/setUpAccount" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="ps.room.shoppingapp.fragment.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" >
+        <action
+            android:id="@+id/action_registerFragment_to_setUpAccount"
+            app:destination="@id/setUpAccount" />
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/from_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUpAccount"
+        android:name="ps.room.shoppingapp.fragment.setUpAccount"
+        android:label="fragment_set_up_account"
+        tools:layout="@layout/fragment_set_up_account" >
+        <action
+            android:id="@+id/action_setUpAccount_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+</navigation>
