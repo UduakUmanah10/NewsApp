@@ -5,7 +5,12 @@
 
 
 
-
+## ✨ Features
+- [x] Search for businesses by keyword.
+- [x] Fire Base Back End As Service
+- [x] Search news by category.
+- [x] Add bussiness to favorites (work in progress).
+- [x] Display businesses on Google maps
 
 
 
