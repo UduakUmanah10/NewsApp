@@ -6,11 +6,13 @@
 
 
 ## ✨ Features
-- [x] Search for businesses by keyword.
+- [x] Search for News by keyword.
 - [x] Fire Base Back End As Service
+- [x] Create user account with email and password
+- [x] Reset Password 
 - [x] Search news by category.
-- [x] Add bussiness to favorites (work in progress).
-- [x] Display businesses on Google maps
+- [x] Add News to favorites (work in progress).
+
 
 
 
