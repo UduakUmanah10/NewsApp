@@ -5,7 +5,7 @@
 ## 📸 ScreenShots
 
  <img src="https://j.gifs.com/nRkPWW.gif" width="200">| <img src="https://j.gifs.com/qQn9WG.gif" width="200"> | <img src="https://j.gifs.com/r2o6W4.gif" width="200"> |<img src="https://j.gifs.com/gpEPW3.gif" width="200">
- <img src="https://j.gifs.com/oZlPW3.gif" width="200">   | <img src="https://j.gifs.com/w0wl6M.gif" width="400">
+ <img src="https://j.gifs.com/oZlPW3.gif" width="200">   | <img src="https://j.gifs.com/w0wl6M.gif" width="200">
 
 
 ## ✨ Features
