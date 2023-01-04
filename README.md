@@ -3,9 +3,8 @@
 
 
 ## 📸 ScreenShots
-<img src="src="https://drive.google.com/file/d/1_ou4Xmw84ZBfviuljtx4WYC_96Y1hcR4/view?usp=share_link" width="200"> 
 
-<img src="https://j.gifs.com/nRkPWW.gif" width="200"> | <img src="https://j.gifs.com/qQn9WG.gif" width="200"> | <img src="https://j.gifs.com/r2o6W4.gif" width="200"> |<img src="https://j.gifs.com/gpEPW3.gif" width="200">
+<img src="j.gifs.com/nRkPWW.gif" width="200"> | <img src="https://j.gifs.com/qQn9WG.gif" width="200"> | <img src="https://j.gifs.com/r2o6W4.gif" width="200"> |<img src="https://j.gifs.com/gpEPW3.gif" width="200">
  <img src="https://j.gifs.com/oZlPW3.gif" width="200">   | <img src="https://j.gifs.com/w0wl6M.gif" width="200">
 
 
