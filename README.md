@@ -4,7 +4,7 @@
 
 ## 📸 ScreenShots
 
-<img src="app/src/main/res/drawable/login.gif" width="200"> | <img src="https://j.gifs.com/r2o6W4.gif" width="200"> |<img src="https://j.gifs.com/gpEPW3.gif" width="200">
+<img src="app/src/main/res/drawable/login.gif" width="200"> | <img src="app/src/main/res/drawable/searchgif.gif" width="200"> |<img src="https://j.gifs.com/gpEPW3.gif" width="200">
  <img src="https://j.gifs.com/oZlPW3.gif" width="200">   | <img src="app/src/main/res/drawable/loginscreen.gif" width="200">
 
 
