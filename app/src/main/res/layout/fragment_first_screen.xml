@@ -32,7 +32,7 @@
         android:layout_width="130dp"
         android:layout_height="55dp"
         android:layout_marginTop="52dp"
-        android:text="Next"
+        android:text="Next>"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEllipseright"
         app:layout_constraintHorizontal_bias="0.985"
@@ -81,16 +81,18 @@
         app:layout_constraintStart_toStartOf="@+id/guidelineEllipseLeft"
         app:layout_constraintTop_toTopOf="@+id/guidelineEllipseTop"
         app:layout_constraintVertical_bias="0.354" />
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="295dp"
-        android:layout_height="336dp"
-        android:src="@drawable/news_papper"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/update"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
         app:layout_constraintBottom_toTopOf="@+id/guidelineEllipsebottom"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEllipseright"
         app:layout_constraintStart_toStartOf="@+id/guidelineEllipseLeft"
-        app:layout_constraintTop_toTopOf="@+id/guidelineLeftTexture" />
+        app:layout_constraintTop_toTopOf="@+id/guidelineLeftTexture"
+        />
 
 
     <!-- TODO: Update blank fragment layout -->

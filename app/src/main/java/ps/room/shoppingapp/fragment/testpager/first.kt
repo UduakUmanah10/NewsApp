@@ -5,14 +5,10 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AbsListView
-import android.widget.AbsListView.OnScrollListener.SCROLL_STATE_TOUCH_SCROLL
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import androidx.recyclerview.widget.RecyclerView.*
 import ps.room.shoppingapp.R
 import ps.room.shoppingapp.activity.NewsActivity
 import ps.room.shoppingapp.adapters.NewsAdapter
@@ -79,8 +75,6 @@ class first : Fragment(R.layout.fragment_first) {
     private fun showprogressbar() {
         binding.paginationProgressBar.visibility = View.VISIBLE
     }
-
-
 
     private fun setupRecyclerView() {
         newsAdapter = NewsAdapter()

@@ -98,49 +98,6 @@
             app:spinning_bar_color="@color/white" />
 
 
-        <ImageView
-            android:id="@+id/facebookLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:src="@drawable/facebook_login"
-            app:layout_constraintStart_toStartOf="@+id/password"
-            app:layout_constraintTop_toBottomOf="@+id/Login" />
-
-        <ImageView
-            android:id="@+id/googleLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:src="@drawable/google_login"
-            app:layout_constraintEnd_toEndOf="@+id/password"
-            app:layout_constraintTop_toBottomOf="@+id/Login" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FaceBook"
-            app:layout_constraintBottom_toBottomOf="@+id/facebookLogin"
-            app:layout_constraintEnd_toEndOf="@+id/facebookLogin"
-            app:layout_constraintHorizontal_bias="0.67"
-            app:layout_constraintStart_toStartOf="@+id/facebookLogin"
-            app:layout_constraintTop_toTopOf="@+id/facebookLogin"
-            app:layout_constraintVertical_bias="0.428" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Google"
-            app:layout_constraintBottom_toBottomOf="@+id/googleLogin"
-            app:layout_constraintEnd_toEndOf="@+id/googleLogin"
-            app:layout_constraintHorizontal_bias="0.634"
-            app:layout_constraintStart_toStartOf="@+id/googleLogin"
-            app:layout_constraintTop_toTopOf="@+id/googleLogin"
-            app:layout_constraintVertical_bias="0.476" />
-
-
-
-
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideLineLoginLeft"
             android:layout_width="wrap_content"

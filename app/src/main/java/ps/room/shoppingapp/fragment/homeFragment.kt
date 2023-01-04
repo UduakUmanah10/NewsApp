@@ -20,11 +20,12 @@ class homeFragment : Fragment(R.layout.fragment_home) {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-        binding.lottiAnimation.playAnimation()
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        binding.lottiAnimation.playAnimation()
         binding.startShopping.setOnClickListener {
             binding.lottiAnimation.pauseAnimation()
             findNavController().navigate(R.id.action_homeFragment_to_registerFragment)

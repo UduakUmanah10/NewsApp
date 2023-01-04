@@ -30,8 +30,7 @@ class NewsHomeFragment : Fragment(
         super.onViewCreated(view, savedInstanceState)
 
         val viewPagerFragment = arrayListOf<Fragment>(
-            first(),
-            ViewPagerMain()
+            first()
         )
 
         val viwShoppingAdapter = HomeViewPagerAdapter(
@@ -44,7 +43,7 @@ class NewsHomeFragment : Fragment(
 
         TabLayoutMediator(binding.tabLayout, binding.viewPager) { tab, position ->
             when (position) {
-                0 -> tab.text = "main"
+                0 -> tab.text = "Sport News"
                 1 -> tab.text = "Chair"
                 2 -> tab.text = "CupBoard"
                 3 -> tab.text = "Table"

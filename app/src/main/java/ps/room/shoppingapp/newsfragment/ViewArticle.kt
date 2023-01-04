@@ -31,13 +31,22 @@ class ViewArticle : Fragment(R.layout.fragment_view_article) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         viewModel = (activity as NewsActivity).viewModel
         val article = args.article
+        showprogressbar()
         binding.webView.apply {
             webViewClient = WebViewClient()
             article.url?.let { loadUrl(it) }
+            hideprogressbar()
         }
         binding.fab.setOnClickListener {
             viewModel.saveArticle(article)
-            Snackbar.make(view,  "Article Saved Sucessfully",Snackbar.LENGTH_SHORT).show()
+            Snackbar.make(view, "Article Saved Sucessfully", Snackbar.LENGTH_SHORT).show()
         }
     }
+    private fun hideprogressbar() {
+        binding.paginationProgressBar.visibility = View.INVISIBLE
+    }
+    private fun showprogressbar() {
+        binding.paginationProgressBar.visibility = View.VISIBLE
+    }
 }
+

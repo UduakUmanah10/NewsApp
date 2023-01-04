@@ -19,22 +19,6 @@ class ViewPagerfragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentViewPagerfragmentBinding.inflate(inflater, container, false)
-        // Inflate the layout for this fragment
-        // val view = inflater.inflate(R.layout.fragment_view_pagerfragment, container, false)
-
-        // val fragmentList = arrayListOf<Fragment>(
-        // firstScreen(),
-        // secondScreen(),
-        // thirdScreen()
-        // )
-
-        // val adapter = ViewPagerAdapter(
-        // fragmentList,
-        // requireActivity().supportFragmentManager,
-        // lifecycle
-        // )
-
-        // view.viewPager.adapter = adapter
 
         return binding.root
     }

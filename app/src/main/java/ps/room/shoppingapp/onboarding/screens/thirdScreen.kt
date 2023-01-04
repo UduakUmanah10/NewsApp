@@ -19,12 +19,13 @@ class thirdScreen : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = FragmentThirdScreenBinding.inflate(inflater, container, false)
-        binding.lottiAnimation.playAnimation()
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.lottiAnimation.playAnimation()
         binding.finish.setOnClickListener {
             binding.lottiAnimation.pauseAnimation()
             findNavController().navigate(R.id.action_viewPagerfragment_to_homeFragment)

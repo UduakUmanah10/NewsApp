@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">News App</string>
     <string name="g_app_name">kleine.</string>
-    <string name="g_the_right_address">The Right Address \n For Shopping \n Anyday</string>
+    <string name="g_the_right_address">The Right spot \n For News \n Anyday</string>
 
     <!--    <string name="g_for_shopping">For Shopping</string>-->
     <!--    <string name="g_any_day">Anyday</string>-->

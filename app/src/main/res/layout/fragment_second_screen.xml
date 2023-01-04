@@ -85,27 +85,20 @@
         app:layout_constraintVertical_bias="0.354" />
 
 
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="295dp"
-        android:layout_height="336dp"
-        android:src="@drawable/searchfornews"
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottiAnimation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/newsearch"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
         app:layout_constraintBottom_toTopOf="@+id/guidelineEllipsebottom"
         app:layout_constraintEnd_toStartOf="@+id/guidelineEllipseright"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guidelineEllipseLeft"
         app:layout_constraintTop_toTopOf="@+id/guidelineLeftTexture"
-        app:layout_constraintVertical_bias="0.0" />
-
-
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="123dp"
-        android:layout_height="217dp"
-        android:src="@drawable/newssearching"
-        app:layout_constraintStart_toStartOf="@+id/guidelineEllipseLeft"
-        app:layout_constraintTop_toTopOf="@+id/guidelineLeftTexture" />
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

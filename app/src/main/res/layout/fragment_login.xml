@@ -20,6 +20,7 @@
 
 
         <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="end"
@@ -29,33 +30,18 @@
             tools:layout_editor_absoluteY="-30dp" />
 
         <TextView
-            android:id="@+id/tv_app_name"
-            style="@style/h2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
-            android:drawableStart="@drawable/ic_kleine_shape"
-            android:drawablePadding="@dimen/_5sdp"
-            android:fontFamily="@font/poppins_light"
-            android:text="@string/g_app_name"
-            android:textColor="@color/g_black"
-            android:textSize="@dimen/_15sdp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="@+id/guideLineLoginLeft"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <TextView
             android:id="@+id/letsLogin"
             android:layout_width="329dp"
             android:layout_height="110dp"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="124dp"
             android:fontFamily="@font/poppins_thin"
             android:gravity="center"
-            android:text="Log In And Start Shopping"
+            android:text="Log In And To Get The Latest News"
             android:textColor="@color/g_black"
             android:textSize="@dimen/_25sdp"
             app:layout_constraintStart_toStartOf="@id/guideLineLoginLeft"
-            app:layout_constraintTop_toBottomOf="@id/tv_app_name" />
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
 
         <TextView
             style="@style/h2"
@@ -122,46 +108,6 @@
             app:layout_constraintEnd_toEndOf="@+id/guideLineLoginRight"
             app:layout_constraintStart_toStartOf="@+id/guideLineLoginLeft"
             app:layout_constraintTop_toBottomOf="@+id/forgotPassword" />
-
-        <ImageView
-            android:id="@+id/facebookLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="13dp"
-            android:src="@drawable/facebook_login"
-            app:layout_constraintStart_toStartOf="@+id/guideLineLoginLeft"
-            app:layout_constraintTop_toBottomOf="@+id/Login" />
-
-
-        <ImageView
-            android:id="@+id/googleLogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:src="@drawable/google_login"
-            app:layout_constraintEnd_toEndOf="@+id/guideLineLoginRight"
-            app:layout_constraintTop_toBottomOf="@+id/Login" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="FaceBook"
-            app:layout_constraintBottom_toBottomOf="@+id/facebookLogin"
-            app:layout_constraintEnd_toEndOf="@+id/facebookLogin"
-            app:layout_constraintHorizontal_bias="0.634"
-            app:layout_constraintStart_toStartOf="@+id/facebookLogin"
-            app:layout_constraintTop_toTopOf="@+id/facebookLogin"
-            app:layout_constraintVertical_bias="0.476" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Google"
-            app:layout_constraintBottom_toBottomOf="@+id/googleLogin"
-            app:layout_constraintEnd_toEndOf="@+id/googleLogin"
-            app:layout_constraintHorizontal_bias="0.634"
-            app:layout_constraintStart_toStartOf="@+id/googleLogin"
-            app:layout_constraintTop_toTopOf="@+id/googleLogin"
-            app:layout_constraintVertical_bias="0.476" />
 
 
         <androidx.constraintlayout.widget.Guideline

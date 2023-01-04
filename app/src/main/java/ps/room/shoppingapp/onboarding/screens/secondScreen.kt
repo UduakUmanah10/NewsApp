@@ -26,8 +26,10 @@ class secondScreen : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val viewpager = activity?.findViewById<ViewPager2>(R.id.viewPager)
+        binding.lottiAnimation.playAnimation()
 
         binding.next2.setOnClickListener {
+            binding.lottiAnimation.pauseAnimation()
             viewpager?.currentItem = 2
         }
     }
